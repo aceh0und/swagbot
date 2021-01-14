@@ -7,9 +7,7 @@ async function main() {
     await driver.get("https://www.swagbucks.com/shop/allcoupons/grocery");
     
     /* CANNOT FIND ELEMENT BECAUSE NOT LOGGED IN, BUT CANNOT LOGIN AUTOMATICALLY BECAUSE OF CAPTCHA. I'm stuck :( */
-    currObj = driver.findElement(By.className("coupon"));
-    
-    await currObj.click()
+    driver.findElement(By.className("coupon")).click();
 
 }
 main()
